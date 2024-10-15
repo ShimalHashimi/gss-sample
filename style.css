@@ -392,13 +392,13 @@ body{
         margin-left: 30px;
         width: 80%;
         text-align: center;
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
     .carousel-item-3 h2{
         font-size: 1.2rem;
     }
     .carousel-item-3 p{
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
     .middle-section{
         margin-top: 20px;
@@ -431,17 +431,21 @@ body{
         height: 310px;
     }
     .carousel-item-3 h1{
-        
+        margin-top: -20px;
         width: 100%;
         margin-left: 5px;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
     .carousel-item-3 h2{
-        font-size: 1rem;
+        font-size: 0.9rem;
+        margin-left: -20px;
     }
     .carousel-item-3 p{
-        font-size: 0.4rem;
+        font-size: 0.7rem;
+        width: 125%;
+        margin-left: -20px;
+
     }
     .carousel-item-3{
         height: 240px;
