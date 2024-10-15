@@ -17,12 +17,13 @@ body{
 
 /********  navbar-section   *********/
 .navbar{
-    padding: 50px 40px 20px 40px;
+    padding: 20px 40px 10px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     position: fixed;
+    align-items: center;
     width: 100%;
     top: 0;
     z-index: 3;
@@ -42,6 +43,7 @@ body{
 .navbar-links{
     display: flex;
     column-gap: 40px;
+    margin-top: 10px;
 }
 
 .navbar-link a{
@@ -269,7 +271,7 @@ body{
         height: 400px;
     }
     .navbar{
-        padding: 20px;
+        padding: 10px 20px;
     }
     .navbar-links{
         display: none;
