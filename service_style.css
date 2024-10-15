@@ -10,7 +10,7 @@
     
 }
 
-/********  media-query   *********/
+/********  .service-middle-section   *********/
 .service-middle-section{
     margin-top: 800px;
     display: flex;
@@ -35,6 +35,98 @@
     display: none;
 }
 
+/********  our-service-section   *********/
+.our-services{
+    margin: 60px;
+}
+
+/**/
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;  /* Adjusted for larger width */
+    height: 300px;
+    margin: 150px 20px;
+}
+
+.slide {
+    width: 500px;
+    height: 300px;
+    margin: 0 20px;
+    padding: 20px;
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 10px;
+    transition: transform 2s ease, opacity 2s ease;
+    position: absolute;
+    cursor: pointer;  /* Makes slides clickable */
+}
+.slider-img{
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    z-index: -1;
+    opacity: 0.15;
+    border-radius: 10px;
+}
+
+.red { background-color: rgb(7, 37, 60); }
+.blue { background-color: rgb(7, 37, 60); }
+.green { background-color: rgb(7, 37, 60); }
+.yellow { background-color: rgb(7, 37, 60); }
+.purple { background-color: rgb(7, 37, 60); }
+.orange { background-color: rgb(7, 37, 60); }
+
+/* Focused slide is zoomed and centered */
+.center {
+    transform: scale(1.5); /* Zoom the focused slide */
+    z-index: 2;
+    opacity: 1;
+}
+
+/* Left and right slides */
+.left {
+    transform: translateX(-60%) scale(1);
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.right {
+    transform: translateX(55%) scale(1);
+    z-index: 1;
+    opacity: 0.6;
+}
+
+/* Hidden slides */
+.hidden-left {
+    transform: translateX(-700px) scale(0.8);
+    z-index: 0;
+    opacity: 0;
+}
+
+.hidden-right {
+    transform: translateX(00px) scale(0.8);
+    z-index: 0;
+    opacity: 0;
+}
+
+.service img{
+    width: 80px;
+}
+.service h3{
+    font-size: 1rem;
+}
+.service p{
+    font-size: 0.7rem;
+}
+
+
 /********  media-query   *********/
 @media screen and (max-width:1200px) {
     .service-header h1{
@@ -49,6 +141,15 @@
     .service-middle-right img{
         width: 450px;
     }
+    .slide {
+        width: 430px;
+        height: 300px;
+    }
+    .slider-img{
+        width: 430px;
+        height: 300px;
+    }
+    
 }
 @media screen and (max-width:1000px) {
     .service-header h1{
@@ -78,6 +179,14 @@
     .service-middle-right img{
         width: 360px;
     }
+    .slide {
+        width: 360px;
+        height: 300px;
+    }
+    .slider-img{
+        width: 360px;
+        height: 300px;
+    }
 }
 @media screen and (max-width:800px) {
     .service-header h1{
@@ -101,6 +210,22 @@
     .service-middle-right img{
         margin-left: -20px;
         width: 300px;
+    }
+    
+    .slide {
+        width: 320px;
+        height: 320px;
+    }
+    .slider-img{
+        width: 320px;
+        height: 320px;
+    }
+    .left {
+        transform: translateX(-45%) scale(1);
+    }
+    
+    .right {
+        transform: translateX(40%) scale(1);
     }
 }
 @media screen and (max-width:650px) {
@@ -135,6 +260,24 @@
         text-align: center;
         width: 300px;
     }
+    .slide {
+        margin-left: 10px;
+        width: 280px;
+        height: 320px;
+    }
+    .slider-img{
+        width: 280px;
+        height: 320px;
+    }
+    .service img{
+        width: 70px;
+    }
+    .service h3{
+        font-size: 0.9rem;
+    }
+    .service p{
+        font-size: 0.6rem;
+    }
 }
 @media screen and (max-width:550px) {
     .service-header h1{
@@ -151,6 +294,34 @@
     }
     .service-middle-section p{
         font-size: 0.6rem;
+    }
+    .slider{
+        margin-top: 100px;
+    }
+    .slide {
+        margin-left: -30px;
+        width: 200px;
+        height: 270px;
+    }
+    .slider-img{
+        width: 200px;
+        height: 270px;
+    }
+    .service img{
+        width: 60px;
+    }
+    .service h3{
+        font-size: 0.7rem;
+    }
+    .service p{
+        font-size: 0.5rem;
+    }
+    .left {
+        transform: translateX(-45%) scale(1);
+    }
+    
+    .right {
+        transform: translateX(50%) scale(1);
     }
 }
 @media screen and (max-width:400px) {
@@ -174,4 +345,30 @@
         margin: 10px;
         padding: 20px 20px 10px 19px;
     } 
+    .slide {
+        margin-left: -15px;
+        width: 130px;
+        height: 270px;
+        padding: 8px;
+    }
+    .slider-img{
+        width: 130px;
+        height: 270px;
+    }
+    .service img{
+        width: 40px;
+    }
+    .service h3{
+        font-size: 0.6rem;
+    }
+    .service p{
+        font-size: 0.4rem;
+    }
+    .left {
+        transform: translateX(-60%) scale(1);
+    }
+    
+    .right {
+        transform: translateX(70%) scale(1);
+    }
 }
