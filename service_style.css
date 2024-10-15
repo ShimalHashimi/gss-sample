@@ -347,12 +347,12 @@
     } 
     .slide {
         margin-left: -15px;
-        width: 130px;
+        width: 170px;
         height: 270px;
         padding: 8px;
     }
     .slider-img{
-        width: 130px;
+        width: 170px;
         height: 270px;
     }
     .service img{
@@ -365,10 +365,10 @@
         font-size: 0.4rem;
     }
     .left {
-        transform: translateX(-60%) scale(1);
+        transform: translateX(-45%) scale(1);
     }
     
     .right {
-        transform: translateX(70%) scale(1);
+        transform: translateX(55%) scale(1);
     }
 }
