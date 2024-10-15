@@ -61,7 +61,7 @@ body{
     top: 0;
     left: -45%;
     color: white;
-    transition: 1s;
+    transition: 0.5s;
     z-index: 4;
 }
 
