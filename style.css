@@ -156,17 +156,20 @@ body{
     color: green;
 }
 .carousel-item-2{
-    padding: 80px 150px 40px 40px;
+    padding: 40px 150px 40px 40px;
     height: 400px;
     width: 60%;
     margin-left: 40%;
     background-color: rgb(122, 176, 217);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .carousel-item h1{
-    font-size: 3.4rem;
+    font-size: 3.2rem;
 }
 .carousel-item p{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 .choose-section{
     margin: 50px 0px 0px 0px;
@@ -504,14 +507,14 @@ body{
         width: 100%;
         margin-left: 5px;
         text-align: center;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
     .carousel-item-3 h2{
-        font-size: 0.9rem;
+        font-size: 1rem;
         margin-left: -20px;
     }
     .carousel-item-3 p{
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         width: 125%;
         margin-left: -20px;
 

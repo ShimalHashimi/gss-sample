@@ -214,11 +214,11 @@
     
     .slide {
         width: 320px;
-        height: 320px;
+        height: 340px;
     }
     .slider-img{
         width: 320px;
-        height: 320px;
+        height: 340px;
     }
     .left {
         transform: translateX(-45%) scale(1);
@@ -301,11 +301,11 @@
     .slide {
         margin-left: -30px;
         width: 200px;
-        height: 270px;
+        height: 290px;
     }
     .slider-img{
         width: 200px;
-        height: 270px;
+        height: 290px;
     }
     .service img{
         width: 60px;
