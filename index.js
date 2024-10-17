@@ -1,11 +1,11 @@
 var sidnav = document.querySelector(".side-navbar")
 
 function showsidenav(){
-    sidnav.style.left="0"
+    sidnav.style.left="65%"
 }
 
 function hidesidenav(){
-    sidnav.style.left="-45%"
+    sidnav.style.left="100%"
 }
 
 window.addEventListener("scroll", function() {
