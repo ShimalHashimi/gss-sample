@@ -59,6 +59,7 @@
     gap: 8px;
     margin-left: 50px;
     list-style: none;
+    text-align: left;
 }
 .our-solutions ul li::before {
     content: "🚀"; /* Star character */

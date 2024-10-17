@@ -22,7 +22,7 @@
     width: 80%;
 }
 .company-open{
-    margin: 50px auto 50px auto;
+    margin: 100px auto 100px auto;
     width: 80%;
     display: flex;
     align-items: center;
@@ -50,7 +50,10 @@
     margin: 80px auto;
 }
 .about-middle1{
-    font-size: 1.5rem;
+    font-size: 3rem;
+}
+.about-middle1 span{
+    color: red;
 }
 .about-middle2{
     font-size: 1.1rem;
@@ -60,6 +63,7 @@
     width: 80%;
     margin: 30px auto;
     gap: 20px;
+    align-items: center;
 }
 .about-last-para{
     font-size: 1.4rem;
@@ -172,6 +176,9 @@
     .company-open-txt{
         height: 350px;
     }
+    .about-middle1{
+        font-size: 2.7rem;
+    }
     .about-last{
         display: block;
     }
@@ -185,6 +192,7 @@
     .about-last-para{
         text-align: center;
         width: 100%;
+        margin-top: 50px;
         margin-bottom: 30px;
     }
     .about-last-per{
@@ -221,6 +229,7 @@
     .company-open-txt2 p{
         font-size: 1rem;
     }
+
 }
 @media screen and (max-width:550px){
     .about-header img{
@@ -240,7 +249,7 @@
         font-size: 0.9rem;
     }
     .about-middle1{
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
     .about-middle2{
         font-size: 0.9rem;
@@ -264,6 +273,9 @@
     }
     .company-open2{
         height: 340px;
+    }
+    .about-middle1{
+        font-size: 1.4rem;
     }
     .about-last-per h1{
         font-size: 1.2rem;
