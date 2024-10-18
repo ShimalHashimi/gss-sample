@@ -1,15 +1,43 @@
 .contact-header{
-    margin-top: -150px;
-    padding: 50px;
+    text-align: center;
+    width: 70%;
+    margin: 10px auto;
 }
-.contact-header img{
+.contact-header h1{
+    font-size: 4rem;
+    font-weight: 600;
+}
+.contact-header p{
+    font-size: 1.5rem;
+}
+.contact-middle{
+    width: 90%;
+    margin: 50px auto 50px auto;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    text-align: center;
+}
+.contact-middle img{
     width: 40%;
 }
-
+.contact-middle h1{
+    color: rgb(7, 37, 60) ;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.contact-middle p{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.hidden-img{
+    display: none;
+}
 
 .contact-section{
     background-color: rgb(7, 37, 60) ;
-    margin: 5% 10%;
+    margin: 50px 10%;
     color: white;
     padding: 30px;
     border-radius: 10px;
@@ -31,7 +59,7 @@
     outline: none;
 }
 .contact-section textarea{
-    width: 100%; 
+    width: 98%; 
     height: 100px; 
     border-radius: 3px;
     font-size: 1.2rem;
@@ -40,59 +68,110 @@
 .contact-section button{
     margin-top: 20px;
 }
+.impression{
+    margin-top: 150px;
+}
 
 /********  media-query   *********/
 @media screen and (max-width:1200px){
-    .contact-header{
+    .contact-middle{
         margin-top: 0px;
         padding: 30px 100px;
     }
 }
 @media screen and (max-width:1000px){
-    .contact-header{
+    .contact-middle{
         margin-top: 0px;
-        padding: 30px 100px;
+        padding: 30px;
     }
-    .contact-header img{
-        width: 60%;
+    .contact-middle h1{
+        font-size: 2.7rem;
     }
-    .impression{
-        height:30px;
+    .contact-middle p{
+        font-size: 1.1rem;
     }
-}
-@media screen and (max-width:800px){
-    .contact-header{
-        margin-top: 0px;
-        padding: 30px 100px;
-    }
-    .contact-header img{
-        width: 60%;
-    }
-    .impression{
-        height:30px;
-    }
-}
-@media screen and (max-width:650px){
-    .contact-header{
-        margin-top: 0px;
-        padding: 30px 100px;
-    }
-    .contact-header img{
-        width: 60%;
+    .contact-middle img{
+        width: 40%;
     }
     .impression{
         height:0px;
     }
 }
-@media screen and (max-width:550px){
-    .contact-header{
+@media screen and (max-width:800px){
+    .contact-middle{
         margin-top: 0px;
-        padding: 30px 50px 10px 50px;
+        padding: 20px;
     }
-    .contact-header img{
-        width: 80%;
+    .contact-middle h1{
+        font-size: 2.2rem;
+    }
+    .contact-middle p{
+        font-size: 1rem;
+    }
+    .contact-middle img{
+        width: 30%;
     }
     .impression{
-        height:40px;
+        height:0px;
+    }
+}
+@media screen and (max-width:650px){
+    .contact-header{
+        width: 90%;
+    }
+    .contact-middle{
+        display: block;
+        margin-top: 30px;
+        padding: 20px;
+        gap: 30px;
+    }
+    .contact-middle h1{
+        font-size: 2.2rem;
+    }
+    .contact-middle p{
+        font-size: 1rem;
+    }
+    .contact-middle img{
+        width: 50%;
+    }
+    .hidden-img-top{
+        display: none;
+    }
+    .impression{
+        margin-top: 120px;
+    }
+    .hidden-img{
+        display: block;
+        margin: 30px auto;
+    }
+}
+@media screen and (max-width:550px){
+    .contact-header h1{
+        font-size: 3rem;
+    }
+    .contact-header p{
+        font-size: 1.1rem;
+    }
+    .contact-middle{
+        margin-top: 30px;
+        padding: 20px;
+        gap: 30px;
+    }
+    .contact-middle h1{
+        font-size: 2.2rem;
+    }
+    .contact-middle p{
+        font-size: 1rem;
+    }
+    .contact-middle img{
+        width: 65%;
+    }
+}
+@media screen and (max-width:400px){
+    .contact-header h1{
+        font-size: 2.4rem;
+    }
+    .contact-header p{
+        font-size: 0.8rem;
     }
 }

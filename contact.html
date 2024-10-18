@@ -59,34 +59,65 @@
     <div class="impression">
     </div>
 
+
 <!--------header-section-------->
     <div class="contact-header">
-        <img src="Images/logo_img.png" alt="">
+        <h1>GET IN TOUCH</h1>
+        <p>
+            We’re excited to connect with you! Our team is always ready to help and collaborate with you to bring your ideas to life !
+        </p>
     </div>
 
 <!--------form-section-------->
 
     <div class="contact-section">
-        <h1>Contact Us</h1>
-        <p>Name :</p>
-        <input type="text">
+        <div class="details-section">
+            
+        </div>
 
-        <p>Email :</p>
-        <input type="text">
+        <div class="form-section">
+            <h1>Contact Us</h1>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="695e583f-c5c0-498e-b762-a49ee6728962">
+                <p>Name :</p>
+                <input type="text" name="name" required>
+
+                <p>Email :</p>
+                <input type="text" name="email" required>
+                
+                <p>Message</p>
+                <textarea class="msg-input" name="message" required></textarea>
+
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
         
-        <p>Message</p>
-        <textarea class="msg-input"></textarea>
-
-
-        <button type="button" class="btn btn-primary">Submit</button>
     </div>
+
+
+<!--------header-section-------->
+<div class="contact-middle">
+    <img class="hidden-img-top" src="Images/logo_img.png" alt="">
+    <div class="contact-para">
+        <h1>We’re Here to Help 💁‍♂️</h1>
+        <p>
+            Whether you have questions about our services, need support, or simply want to connect with us, our team is ready
+             to assist you. Don’t hesitate to reach out 
+             <br>— we’re just a message or call away.
+        </p>
+        <img class="hidden-img" src="Images/logo_img.png" alt="">
+    </div>
+    
+</div>
+
 
 <!--------footer - section-------->
     <div class="footer-section">
         <h1>Global Strategic Solution</h1>
         <p class="footer-para">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut officiis modi minima molestiae
-             doloremque quibusdam asperiores iusto velit hic facere, voluptas fuga nobis porro! Explicabo.
+            We can assist your business in expanding, whether you require professional guidance or would like to learn more about our 
+            offerings. 🤝 Let's work together to realize your idea! 🌟
         </p>
         <button type="button" class="btn btn-primary">Contact Us</button>
 
